@@ -6,10 +6,10 @@
 .footer-container {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .footer-info {
-  margin-right: 120px;
 }
 
 .footer-logo {
@@ -91,4 +91,56 @@
   width: 24px;
   height: 24px;
   fill: #f4f4fd;
+}
+.footer-subscribe {
+  justify-content: space-between;
+}
+.footer-subscribe-text {
+  color: #ffffff;
+}
+.footer-form {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-top: 16px;
+}
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #ffffff;
+
+  background-color: transparent;
+  outline: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+
+  transition: 250ms ease-out;
+  transition-property: border-color;
+}
+.footer-form-input:focus {
+  border-color: #31d0aa;
+}
+.footer-form-input::placeholder {
+  color: #ffffff;
+}
+.button-filled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  max-width: 165px;
+
+  transition: 250ms ease-out;
+  transition-property: background-color;
+}
+.button-filled:focus,
+.button-filled:hover {
+  background-color: #31d0aa;
 }
