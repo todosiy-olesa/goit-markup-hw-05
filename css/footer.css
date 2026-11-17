@@ -6,10 +6,11 @@
 .footer-container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  gap: 80px;
 }
 
 .footer-info {
+  margin-right: 40px;
 }
 
 .footer-logo {
@@ -93,9 +94,10 @@
   fill: #f4f4fd;
 }
 .footer-subscribe {
-  justify-content: space-between;
+  margin-left: auto;
 }
 .footer-subscribe-text {
+  font-weight: 500;
   color: #ffffff;
 }
 .footer-form {
@@ -136,6 +138,12 @@
   width: 165px;
   height: 40px;
   max-width: 165px;
+
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 
   transition: 250ms ease-out;
   transition-property: background-color;

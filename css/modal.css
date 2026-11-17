@@ -11,7 +11,7 @@
   visibility: hidden;
   pointer-events: none;
 
-  transition: 250ms ease-out 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition-property: opacity, visibility;
 }
 .backdrop.is-open {
@@ -35,7 +35,7 @@
   background: #fcfcfc;
   box-sizing: border-box;
 
-  transition: 250ms ease-out 0ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition-property: transform, opacity;
 }
 .backdrop.is-open .modal {
@@ -64,21 +64,15 @@
   background-color: #e7e9fc;
 
   cursor: pointer;
-  transition: 250ms ease-out;
-  transition-property: background-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition-property: background-color, border-color;
 }
 .modal-btn-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 0;
-
   border-radius: 24px;
   background: #e7e9fc;
   color: #2e2f42;
 
-  transition: 250ms ease-out;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition-property: color;
 }
 .modal-btn:hover,
@@ -126,7 +120,7 @@
   outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
 
-  transition: 250ms ease-out;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition-property: border-color;
 }
 .modal-form-input:focus {
@@ -140,7 +134,7 @@
 
   color: #2e2f42;
   pointer-events: none;
-  transition: 250ms ease-out;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition-property: color;
 }
 .modal-form-input:focus + .modal-form-icon {
@@ -159,12 +153,12 @@
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
+
+  transition: order-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: border-color;
 }
 .modal-form-comment:focus {
   border-color: #4d5ae5;
-
-  transition: 250ms ease-out;
-  transition-property: border-color;
 }
 .modal-form-comment::placeholder {
   color: rgba(46, 47, 66, 0.4);
@@ -192,7 +186,7 @@
   border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
 
-  transition: 250ms ease-out;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition-property: border-color, background-color;
 }
 .checkbox:checked + .modal-form-policy > .modal-form-checkbox {
@@ -208,7 +202,7 @@
 .modal-form-checkbox-icon {
   color: #f4f4fd;
   opacity: 0;
-  transition: 250ms ease-out;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition-property: opacity;
 }
 .checkbox:checked
