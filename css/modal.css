@@ -103,6 +103,9 @@
 .modal-form-field {
   margin-bottom: 8px;
 }
+.modal-form-field:nth-child(4) {
+  margin-bottom: 16px;
+}
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
@@ -168,7 +171,6 @@
   color: rgba(46, 47, 66, 0.4);
 }
 .modal-form-agreement {
-  margin-top: 8px;
   margin-bottom: 24px;
 }
 .modal-form-policy {
